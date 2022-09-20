@@ -4,11 +4,11 @@ input D,Clk;
 output Qa,Qb;
 wire S,R,S_g,R_g;
 	assign	R = ~D,
-				S = D,
-				S_g = ~(S & Clk),
-				R_g = ~(R & Clk),
-				Qa = ~(S_g & Qb),
-				Qb = ~(R_g & Qa);
+		S = D,
+		S_g = ~(S & Clk),
+		R_g = ~(R & Clk),
+		Qa = ~(S_g & Qb),
+		Qb = ~(R_g & Qa);
 endmodule
 
 //D-ff
